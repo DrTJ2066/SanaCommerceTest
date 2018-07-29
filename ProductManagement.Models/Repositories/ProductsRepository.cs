@@ -27,6 +27,11 @@ namespace ProductManagement.Models.Repositories
             return Context.GetProductsList();
         }
 
+        public int GetProductsCount()
+        {
+            return Context.GetProductsList().Count;
+        }
+
         public void Remove(int id)
         {
             Context.Remove(id);

@@ -1,24 +1,33 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.site_title {
+    margin: 20px 10px 0px 10px;
+    height: auto;
+    line-height: normal;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.nav_title {
+    height: auto;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.profile_info {
+    padding: 25px 0 10px;
 }
+
+.panel_toolbox {
+    min-width: initial;
+}
+
+.btn.btn-app-large {
+    height: auto;
+    margin: 0 10px 10px 0;
+    padding: 15px 5px 5px 5px;
+}
+
+    .btn.btn-app-large > .fa, .btn.btn-app > .glyphicon, .btn.btn-app > .ion {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }

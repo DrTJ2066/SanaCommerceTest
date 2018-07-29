@@ -17,6 +17,7 @@ namespace ProductManagement.Controllers
         public ActionResult Index()
         {
             SetContextTypeInfo();
+            ViewBag.ProductsCount = productsRepository.GetProductsCount();
 
             var result = productsRepository.GetProductsList();
             return View(result);
